@@ -1,0 +1,144 @@
+.logo {
+    display: block;
+    border-radius: 200px;
+    height: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10px;
+    
+}
+
+.logoDiv{
+    padding-bottom: 20px;
+}
+
+h1,
+h1~p {
+    text-align: center;
+}
+
+.nav,
+footer>a {
+    font-family: Rubik;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .43em;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    opacity: 80%;
+    padding-top: 20px;
+    align-items: center;
+    color: rgba(29, 29, 29, .7);
+}
+
+.nav a:hover,
+.copyright a:hover,
+.footnote:hover {
+    color: chartreuse;
+    background-color: wheat;
+}
+
+.nav a:link,
+.copyright a:link
+{
+    font-weight: bold;
+}
+
+.nav a:visited,
+.copyright a:visited,
+.footnote:visited {
+    color: chocolate;
+}
+
+.nav a:active,
+.copyright a:active,
+.footnote:active {
+    color: rgb(0, 139, 9);
+}
+
+.nav a:focus,
+.copyright a:focus,
+.footnote:focus {
+    background-color: darkorange;
+}
+
+body {
+    font-family: Rubik;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: .08em;
+    line-height: 2em;
+    text-transform: none;
+    color: rgba(29, 29, 29, .7);
+}
+
+section:nth-child(odd) {
+    background-color: rgba(251, 229, 231, 255);
+}
+
+.body-border {
+    border: 5px solid pink;
+    margin: 50px 50px;
+}
+
+p::selection {
+    background-color: cornsilk;
+}
+
+section {
+    padding-left: 36px;
+    padding-right: 36px;
+}
+
+.footnote {
+    top: -0.5em;
+    position: relative;
+    font-size: 0.6em;
+    vertical-align: baseline;
+}
+
+#legal {
+    border: 3px solid lightslategrey;
+    border-width: 1px 0px;
+    padding: 17px 0 11px;
+    text-align: center;
+    font-size: smaller;
+}
+
+li {
+    list-style-type: none
+}
+
+.findMe {
+    font-family: cursive;
+    font-size: x-large;
+    text-align: center;
+    text-shadow:5px 5px 10px ;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright>a {
+    padding-right: 20px;
+}
+
+section{
+    padding: 30px;
+}
+
+/*exact value selector */
+a[href="https://www.instagram.com/"]{
+    font-weight: bolder;
+}
+
+/*value starts with*/
+a[href="mailto:"]{
+    font-weight: bolder;
+}

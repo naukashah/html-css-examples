@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Revised</title>
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: lightslategray;
+        }
+
+        .topnav a {
+            /* float: left;*/
+            color: mediumblue;
+            /*text-align: center;*/
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            text-decoration: underline;
+            font: large;
+            margin-right: 20px;
+            font-weight: bolder;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .image-gallery {
+            width: 410px;
+            border-radius: 50%;
+            align-items: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+
+        .image-gallery img {
+            /* height: 100px;
+          */
+            border-radius: 50%;
+            opacity: .7;
+        }
+
+        .image-gallery img:hover {
+            opacity: 1;
+            -webkit-transform: rotate(-10deg);
+            -moz-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+        }
+
+        .imageSize {
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="../welcome/">Overview</a>
+        <a href="../about/">About Me</a>
+        <a href="../gallery/">Gallery</a>
+        <a href="../gallery_revised/" class="inactiveLink">Gallery Revised</a>
+    </div>
+    <div>
+        <p>By clicking on <strong><i>Download</i></strong> option next to images, it will download the image. By
+            clicking on the <strong><i>Image</i></strong>, it will open full size image in new tab.</p>
+    </div>
+    <div class="image-gallery">
+        <a href="images/picture1.jpg" target="_blank"><img src="images/picture1.jpg" class="imageSize"
+                alt="First image"></a>
+        <a href="images/picture1.jpg" download>Download</a>
+        <a href="images/image 2.jpg" target="_blank"><img src="images/image 2.jpg" class="imageSize"
+                alt="Second image"></a>
+        <a href="images/image 2.jpg" download>Download</a>
+        <a href="images/image 3.jpg" target="_blank"><img src="images/image 3.jpg" class="imageSize"
+                alt="Third image"></a>
+        <a href="images/image 3.jpg" download>Download</a>
+        <a href="images/image 4.jpg" target="_blank"><img src="images/image 4.jpg" class="imageSize"
+                alt="Fourth image"></a>
+        <a href="images/image 4.jpg" download>Download</a>
+        <a href="images/image 5.jpg" target="_blank"><img src="images/image 5.jpg" class="imageSize"
+                alt="Fifth image"></a>
+        <a href="images/image 5.jpg" download>Download</a>
+        <a href="images/image 6.jpg" target="_blank"><img src="images/image 6.jpg" class="imageSize"
+                alt="Sixth image"></a>
+        <a href="images/image 6.jpg" download>Download</a>
+        <a href="images/image 7.jpg" target="_blank"><img src="images/image 7.jpg" class="imageSize"
+                alt="Seventh image"></a>
+        <a href="images/image 7.jpg" download>Download</a>
+        <a href="images/image 8.jpg" target="_blank"><img src="images/image 8.jpg" class="imageSize"
+                alt="Eighth image"></a>
+        <a href="images/image 8.jpg" download>Download</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Test-fields</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number">
+        <input type="password">
+        <input type="date">
+        <input type="text" maxlength="10" autofocus>
+        <input type="email" value="naukashah@gmail.com" disabled>
+        <input type="text" placeholder="Enter your name" readonly>
+        <!--readonly-->
+        <textarea cols="30" rows="10">This is text area content.</textarea>
+
+        <input type="text" list="country">
+        <datalist id="country">
+            <option value="AU">Australia</option>
+            <option value="IN">India</option>
+            <option value="US">USA</option>
+        </datalist>
+
+        <input type="text" list="countries" autocomplete="off">
+        <datalist id="countries">
+            <option data-value="AU">Australia</option>
+            <option data-value="IN">India</option>
+            <option data-value="US">USA</option>
+        </datalist>
+
+        <select>
+            <option value="0" selected>Select classes</option>
+            <optgroup label="front-end classes">
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JS</option>
+            </optgroup>
+            <optgroup label="back-end classes">
+                <option value="1">NodeJS</option>
+                <option value="2">JSP</option>
+                <option value="3">.NET</option>
+            </optgroup>
+
+        </select>
+        <select multiple>
+            <option value="0">Select classes</option>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JS</option>
+        </select>
+
+        <div>
+            <input type="checkbox" id="html" disabled>
+            <label for="html" class="label-inline">HTML</label>
+        </div>
+        <div>
+            <input type="checkbox" id="css">
+            <label for="css" class="label-inline">CSS</label>
+        </div>
+        <div>
+            <input type="checkbox" id="js">
+            <label for="js" class="label-inline">JS</label>
+        </div>
+
+        <div>
+            <div>
+                <input type="radio" name="classname" id="html">
+                <label for="html" class="label-inline">HTML</label>
+            </div>
+            <div>
+                <input type="radio" name="classname" id="css">
+                <label for="css" class="label-inline">CSS</label>
+            </div>
+            <div>
+                <input type="radio" name="classname" id="javascript" disabled>
+                <label for="javascript" class="label-inline">JS</label>
+            </div>
+        </div>
+
+        <input type="range" id="" min="0" max="100" value="80">
+
+        <!--how can we make browser select one or more files-->
+        <input type="file" name="" id="" multiple accept=".jpeg, .png">
+        <input type="file" name="" id="" multiple accept="image/*">
+        <input type="file" name="" id="" multiple accept="video/*">
+
+
+        <input type="hidden" name="class-id" value="1234">
+
+        <input type="text" name="mytext" required minlength="0" maxlength="15">
+        <input type="number" name="mytext" required min="3" max="15">
+
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </fieldset>
+        <fieldset>
+            <legend>Payment</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </fieldset>
+
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

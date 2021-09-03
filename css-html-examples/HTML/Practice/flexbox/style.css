@@ -1,0 +1,29 @@
+.container {
+    border: 3px solid black;
+    display: flex;
+    /*flex has two axis : main and cross  */
+    height: 90vh;
+    flex-direction: row;
+    /*row, column, row-reverse, column-reverse*/
+    justify-content: center;
+    /*space-around, space-between etc -> it spplies to the main content*/
+    align-items: flex-start;
+    /*it will work on the cross axis (based on the flex-direction)*/
+    /*flex-wrap: wrap;*/
+    /*align-content: center;*/
+    /*align-content is used when multiple lines of code*/
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background: gold;
+    margin: 1rem;
+    flex-basis: 5rem;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.box-one {
+    flex: 1 0 10rem;
+}

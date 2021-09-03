@@ -1,0 +1,65 @@
+.localnav {
+    font-family: Rubik;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .43em;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    opacity: 80%;
+    padding-top: 20px;
+    align-items: center;
+    color: burlywood(29, 29, 29, .7);
+}
+
+.localnav>a:hover {
+    color: chartreuse;
+    background-color: wheat;
+}
+
+.localnav>a:link {
+    font-weight: bold;
+}
+
+.localnav>a:visited {
+    color: chocolate;
+}
+
+.localnav>a:active {
+    color: rgb(0, 139, 9);
+}
+
+.localnav>a:focus {
+    background-color: darkorange;
+}
+
+.body-border {
+    background-image: linear-gradient(45deg, #ecbdbc, white);
+}
+
+table {
+    width: 100%;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+
+}
+
+table,
+tr {
+    border: 1px solid tomato;
+    border-collapse: collapse;
+}
+
+thead {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+span{
+    color: sienna;
+}
+

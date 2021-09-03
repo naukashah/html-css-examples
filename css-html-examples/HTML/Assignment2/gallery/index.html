@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: lightslategray;
+        }
+
+        .topnav a {
+            /* float: left;*/
+            color: mediumblue;
+            /*text-align: center;*/
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            text-decoration: underline;
+            font: large;
+            margin-right: 20px;
+            font-weight: bolder;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        th {
+            font-size: larger;
+            background-color: rosybrown;
+            padding: 10px;
+        }
+
+        body {
+            align-items: center;
+            margin-top: 10px;
+            background-color: mistyrose;
+        }
+
+        .gallery-items {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        p {
+            font-size: small;
+            color: seagreen;
+            text-align: center;
+        }
+
+        .inactiveLink {
+            pointer-events: none;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="../welcome/">Overview</a>
+        <a href="../about/">About Me</a>
+        <a href="../gallery/" class="inactiveLink">Gallery</a>
+        <a href="../gallery_revised/">Gallery Revised</a>
+    </div>
+    <table align="center">
+        <th colspan="4">Gallery</th>
+        <tr>
+            <td> <img src="images/picture1.jpg" alt="gallery-image-1" class="gallery-items">
+            </td>
+            <td><img src="images/image 2.jpg" alt="gallery-image-2" class="gallery-items">
+            </td>
+            <td><img src="images/image 3.jpg" alt="gallery-image-3" class="gallery-items">
+            </td>
+            <td><img src="images/image 4.jpg" alt="gallery-image-4" class="gallery-items">
+            </td>
+        </tr>
+        <tr>
+            <td><a href="images/picture1.jpg" download>Download</a>
+                <a href="images/picture1.jpg" target="_blank">View Full Image</a></td>
+            <td><a href="images/image 2.jpg" download>Download</a>
+                <a href="images/image 2.jpg" target="_blank">View Full Image</a></td>
+            <td><a href="images/image 3.jpg" download>Download</a>
+                <a href="images/image 3.jpg" target="_blank">View Full Image</a></td>
+            <td><a href="images/image 4.jpg" download>Download</a>
+                <a href="images/image 4.jpg" target="_blank">View Full Image</a></td>
+        </tr>
+        <tr>
+            <td><img src="images/image 5.jpg" alt="gallery-image-5" class="gallery-items">
+            </td>
+            <td> <img src="images/image 6.jpg" alt="gallery-image-6" class="gallery-items">
+            </td>
+            <td><img src="images/image 7.jpg" alt="gallery-image-7" class="gallery-items">
+            </td>
+            <td><img src="images/image 8.jpg" alt="gallery-image-8" class="gallery-items">
+            </td>
+        </tr>
+        <tr>
+            <td><a href="images/image 5.jpg" download>Download</a>
+                <a href="images/image 5.jpg" target="_blank">View Full Image</a></td>
+            <td><a href="images/image 6.jpg" download>Download</a>
+                <a href="images/image 6.jpg" target="_blank">View Full Image</a></td>
+            <td><a href="images/image 7.jpg" download>Download</a>
+                <a href="images/image 7.jpg" target="_blank">View Full Image</a></td>
+            <td><a href="images/image 8.jpg" download>Download</a>
+                <a href="images/image 8.jpg" target="_blank">View Full Image</a></td>
+        </tr>
+    </table>
+    <p>By clicking on <strong><i>Download</i></strong> option next to images, it will download the image.</p>
+    <p>By clicking on <strong><i>View Full Image</i></strong> option, it will open full size image in new tab.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+.localnav {
+    font-family: Rubik;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    letter-spacing: .43em;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    opacity: 80%;
+    padding-top: 20px;
+    align-items: center;
+    color: burlywood(29, 29, 29, .7);
+}
+
+.localnav>a:hover {
+    color: chartreuse;
+    background-color: wheat;
+}
+
+.localnav>a:link {
+    font-weight: bold;
+}
+
+.localnav>a:visited, #resume:hover{
+    color: chocolate;
+}
+
+.localnav>a:active, #resume:active{
+    color: rgb(0, 139, 9);
+}
+
+.localnav>a:focus, #resume:focus {
+    background-color: darkorange;
+}
+
+.card2 {
+    width: 400px;
+    height: 400px;
+    float: left;
+    padding-right: 10px;
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+    float: right;
+}
+/*new style for image side to text*/
+section {
+    padding-bottom: 152px;
+    overflow: hidden;
+    display: block;
+    padding-left: 36px;
+padding-right: 36px;
+}
+
+.section-content {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 980px;
+}
+
+.div-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.image-column {
+    box-sizing: border-box;
+}
+
+.figure-card1 {
+    position: relative;
+}
+
+.text-column {
+    justify-content: flex-start;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-left: 3%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 0px;
+}
+
+.text-content{
+    direction: ltr;
+    text-align: left;
+}
+
+#resume{
+        text-align:center;
+}

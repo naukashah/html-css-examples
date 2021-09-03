@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+        }
+
+        .boxes {
+            border: 5px solid grey;
+            top: 10rem;
+            position: relative;
+        }
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        .box-one {
+            background-color: gold;
+            position: relative;
+            z-index: 0;
+        }
+
+        .box-two {
+            position: fixed;
+            left: 10rem;
+            top: 10rem;
+            background-color: tomato;
+            z-index: 1;
+        }
+
+        .box-three {
+            background-color: dodgerblue;
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    /* it will start moving property ; right 5rem is equal to left -5rem*/
+    /*it tops on other div, there is another div : z axis. */
+    /*we can control the z axis by z-index*/
+    /*it should apply to parent and child if both are relative*/
+
+
+    <div class="boxes">
+        <div class="box box-one"></div>
+        <div class="box box-two"></div>
+        <div class="box box-three"></div>
+    </div>
+
+    <p>what if you don't want the children move with parent : fixed</p>
+
+</body>
+
+</html>

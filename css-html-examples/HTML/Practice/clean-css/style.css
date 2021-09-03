@@ -1,0 +1,31 @@
+:root{
+    --color-primary: gold;
+    --border-size:2px;
+    --border-radius:10px;
+}
+
+.one{
+    background: var(--color-primary);
+}
+
+/*follow a naming convention*/
+/*kabob case:nav-bar
+camelCase :
+
+.nav-bar{
+
+}
+
+/*basic style*/
+/*margin:0;
+padding:0;
+box-sizing:border-box;
+
+html{..}
+body{..}
+
+/*Typography*/
+/*h1,h2,h3{}
+
+/*forms*/
+/*input{}*/

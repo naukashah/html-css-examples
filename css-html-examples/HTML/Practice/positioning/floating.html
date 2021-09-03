@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Floating</title>
+    <style>
+        .tweet{
+            border: 3px solid blue;
+            overflow: hidden; /*should not use this --> use class clearfix to fix the floating of elements*/
+        }
+       /* .tweet::after{
+            content: '';
+            display: block;
+            clear: both;
+        }*/
+
+        /*.clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }*/
+        img{
+            width: 100px;
+            border-radius: 50px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .username {
+            font-weight: bold;
+        }
+        .clear{
+            clear: both; /*left or right or both*/
+        }
+    </style>
+</head>
+
+<body>
+    <article class="tweet">
+        <img class="avatar" src="images/profile.jpeg" alt="">
+        <div class="username">Nauka Shah </div>
+        <div class="clear">This is my first assignment. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus
+            odit voluptas sed repudiandae quod ipsam reprehenderit magni delectus deleniti inventore distinctio, quasi,
+            eius temporibus! Unde quasi aut praesentium necessitatibus.</p>
+
+    </article>
+
+    <article class="tweet">
+        <img class="avatar" src="images/profile.jpeg" alt="">
+        <div class="username">Nauka Shah </div>
+        <p>collapsing of paragraph resolved by style</p>
+    </article>
+
+</body>
+
+</html>

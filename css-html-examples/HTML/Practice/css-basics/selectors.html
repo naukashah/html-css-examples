@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+        body {
+            margin: 10px
+        }
+
+        article {
+            border: 2px solid grey;
+        }
+        h2{
+            font-style: italic;
+        }
+        #id-heading{
+            font-style: normal;
+        }
+        .details{
+            text-decoration : underline;
+        }
+        a[href="https://www.paypal.com"]{
+            font-weight: bold;
+        }
+        a[href^=www]{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selectors</h1>
+
+    <article>
+        <h2>Type Selector</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </article>
+    <article>
+        <h2 id="id-heading">IDs Selector</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </article>
+    <article>
+        <h2>Class Selector</h2>
+        <p class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </article>
+    <article>
+        <h2>Attribute Selector</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <a href="https://www.paypal.com" target="_blank">Paypal</a>
+        <a href="www.apple.com" target="_blank">Apple</a>
+        <p>Matches with a[href="https://www.paypal.com"]</p>
+        <p>Starts with a[href^="www"]</p>
+        <p>Ends with a[href$=".com"]</p>
+        <p>Two attributes a[href^="www"][href$=".com"]</p>
+    </article>
+</body>
+
+</html>

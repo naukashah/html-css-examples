@@ -1,0 +1,61 @@
+/* Navbar */
+.navbar-default {
+    background-color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: #b5e3e8;
+}
+
+body {
+    padding-top: 50px;
+    color: #959595;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+a:hover, a:active {
+    color: green;
+  }
+
+.hero {
+    background: url('https://i.picsum.photos/id/703/1440/650.jpg?hmac=S5DjU6W1AVeQjpACHfdQ61eZklrGH8JFGb5-vFaP_Ag');
+    text-shadow: 1px 1px 8px black;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgb(20, 34, 40);
+    border-color: blue;
+}
+
+
+h1 {
+    color: #e9e212;
+    align-self: center;
+    margin-top: 50%;
+    /*background-color: gray;*/
+    line-height: 200px;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.small-print {
+    background-color: #fff;
+    text-align: center;
+}

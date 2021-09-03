@@ -1,0 +1,133 @@
+/* Navbar */
+.navbar-default {
+    background-color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: #b5e3e8;
+}
+
+body {
+    padding-top: 50px;
+    color: #959595;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://wallpapercave.com/wp/N5dz0XM.jpg');
+    background-position: top right;
+    background-size: cover;
+    background-color: lightgray;
+    color: white;
+    text-shadow: 1px 1px 8px black;
+}
+
+hero .btn {
+    text-shadow: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgb(53, 125, 154);
+    border-color: blue;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #e9e212;
+}
+
+
+.promo,
+.promo h3,
+.promo a:link,
+.promo a:visited,
+.promo a:hover,
+.promo a:active {
+    color: white;
+    text-shadow: 1px 1px 8px black;
+    text-decoration: none;
+}
+
+.promo,
+.footer-map {
+    border-width: 1px;
+    border-color: black;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.item-1 {
+    background: url('https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg');
+    object-fit: fill;
+}
+
+.promo-item {
+    height: 400px;
+    line-height: 180px;
+    text-align: center;
+}
+
+.item-2 {
+    background: url('https://assets-global.website-files.com/5f7c5b7dd36c5bdb23a35350/5f880f87f52d30748ad8a5fc_How-To-Write-A-Project-Brief.jpg');
+}
+
+.item-3 {
+    background: url('https://www.uxweb-design.com/wp-content/uploads/2019/10/Web-design-1.jpg');
+    object-fit: fill;
+}
+
+.footer-map {
+    height: 300px;
+    width: 100%;
+    background: url('https://www.esri.com/content/dam/esrisites/en-us/about/business-needs/real-time-location-tracking/assets/real-time-location-tracking-5050-see-movement-patterns-others-cant.jpg');
+    background-size: cover;
+    border-color: #ccc;
+}
+
+.footer-info-item {
+    padding: 0px 20px;
+}
+
+.footer-info,
+.footer-info a:link,
+.footer-info a:hover,
+.footer-info a:focus,
+.footer-info a:visited {
+    color: #959595;
+}
+
+.footer-info h3 {
+    color: black;
+    font-size: 18px;
+}
+
+footer .small-print {
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-info {
+    padding: 20px 0;
+    background: #ccc;
+    }
+

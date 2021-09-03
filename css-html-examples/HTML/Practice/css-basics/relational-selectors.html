@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational Selectors</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+        body {
+            margin: 10px
+        }
+
+        article {
+            border: 2px solid grey;
+        }
+
+        h2 {
+            font-style: italic;
+        }
+        .second h2{ /* descendent selector : selected child of parent
+            it will select all h2 under article parent. Also if there are nested h2 */
+            font-style: normal;
+            color: hotpink;
+        }
+        article > h2{ /* child selector: it will only select the child of the parent and not the nested ones */
+            color: yellowgreen;
+        }
+
+        .second > h2 { /*Again example of child selector*/
+            color: blue; 
+        }
+
+        .second + p { /* paragraph with the same level of class .second will get this style
+            only 1 sibling: Sibling means right next to it on same level */
+            color: red; 
+        }
+
+        .second ~ p { /* paragraph with the same level of class .second will get this style
+            all siblings on same level  */
+            color: violet; 
+        }
+        article article p,article article div{ 
+            color: tomato
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Selectors</h1>
+    <h2>Types of selector</h2>
+    <article id="first-article">
+        <h2>ID selector</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </article>
+    <article class="second">
+        <h2>Class selector</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </article>
+    <p>Sibling selecor </p>
+    <p>Sibling selecor won't be applied ; all siblings </p>
+    <p>Sibling selecor won't be applied ; all siblings </p>
+    <article>
+        <h2>Relational Selectors</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <a href="https://www.paypal.com" target="_blank">Paypal</a>
+        <a href="www.apple.com" target="_blank">Apple</a>
+        <section>
+            <h2>Class selector</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </section>
+    </article>
+    <article>
+        <h2>Trial for Selectors</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <article>
+            <h2>Class selector</h2>
+            <div>Multiple highlight </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </article>
+    </article>
+</body>
+
+</html>

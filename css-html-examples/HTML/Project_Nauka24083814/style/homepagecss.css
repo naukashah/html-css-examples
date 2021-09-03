@@ -1,0 +1,60 @@
+.image-gallery img {
+    border-radius: 3%;
+    opacity: .7;
+}
+
+.image-gallery img:hover {
+    opacity: 1;
+   /* -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);*/
+}
+
+.imageSize {
+    width: 450px;
+    height: 450px;
+
+}
+
+.clickable {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .gallery-items-parent-1,
+    .gallery-items-parent-2,
+    .gallery-items-parent-3,
+    .gallery-items-parent-4{
+      width: 100%;
+    }
+  }
+
+.cover-image{
+  /*border: 1px solid black;*/
+  padding: 25px;
+  background: url(../media/homepage-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  width: inherit;
+  height: inherit;
+}  
+  
+.innerdiv{
+  height: 400px;
+}
+
+section {
+  padding: 40px;
+}
+
+div h3{
+  text-align: justify;
+}

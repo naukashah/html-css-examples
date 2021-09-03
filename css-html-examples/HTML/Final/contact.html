@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!--logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../Final/index.html">
+                    <span class="glyphicon glyphicon-star">
+                        <!-- <img src="https://dummyimage.com/35/383638/c2c2c2.png&text=LOGO" alt=""> --></span>
+                </a>
+            </div>
+
+            <!--global nav-->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../Final/index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="../Final/contact.html"><span class="	glyphicon glyphicon-earphone"></span> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="form">
+            <!--Hero main-->
+            <h3>Personal Info</h3>
+            <form id ="contact-form" onsubmit="return false">
+                <div id="div-form">
+                    <label for="student-name">First Name<sup>*</sup></label>
+                    <input class="" id="student-name" type="text" placeholder="Your name..">
+                </div>
+                <div class="mb-3">
+                    <label for="last-name">Last Name</label>
+                    <input class="" id="last-name" type="text" placeholder="Your last name..">
+                </div>
+                <div>
+                    <label class="form-label" for="student-email">Email<sup>*</sup></label>
+                    <input class="" id="student-email" type="email" placeholder="Your email address">
+                </div>
+                <div>
+                    <label class="form-label" for="age">Age<sup>*</sup></label>
+                    <input class="" id="age" type="number" placeholder="Your age in years">
+                </div>
+                <div>
+                    <label class="form-label" for="Country">Choose a country</label>
+
+                    <select class="form-label" name="country" id="age">
+                        <option value="aus">Select Country</option>
+                        <option value="aus">Australia</option>
+                        <option value="usa">USA</option>
+                        <option value="in">India</option>
+                    </select>
+                    </select>
+                </div>
+                <div>
+                    <label class="form-label" for="message">Messgae<sup>*</sup></label>
+                    <textarea class="" id="message" type="text" placeholder="Type something.."></textarea>
+                </div>
+
+                <button id="myBtn" class="btn btn-primary" type="submit" onclick="show()">Submit</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Copyright-->
+        <div class="copyright">
+            <div class="container">
+                <p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a>
+                </p>
+                <p>Copyright &copy; 2021 ITU </p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="../Final/js/index.js"></script>
+</body>
+
+
+</html>

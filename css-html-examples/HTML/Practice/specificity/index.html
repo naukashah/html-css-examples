@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        h1 {
+            color: blue
+        }
+
+        .heading {
+            color: chocolate;
+        }
+
+        #first-heading {
+            color: crimson;
+        }
+
+        article first-heading {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <article id="class">
+        //priority of style is : id->class->element
+        <h1 id="first-heading" class="heading">HTML/CSS</h1>
+        <h1 id="second-heading" class="heading">HTML/CSS</h1>
+        <h1 id="third-heading" class="heading">HTML/CSS</h1>
+
+    </article>
+</body>
+
+</html>

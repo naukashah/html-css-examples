@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .box-model {
+            padding: 0px;
+            height: 100px;
+            width: 100px;
+            border: 5px solid black;
+            margin: 10px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: gold;
+            border: 10px solid orange;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+
+            /* border-box : it will apply property at box level
+             or 
+            content-box*/
+        }
+
+        .box-article {
+            height: 200px;
+            width: 200px;
+            background-color: gold;
+            border: 10px solid orange;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .box::before {
+            content: "hello";
+            border: 5px;
+        }
+        .box-model-span{
+            height: 200px;
+            width: 200px;
+            background-color: gold;
+            display: inline-block;
+        }
+        .overflow-span{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+            border: 2px solid black;
+            overflow: auto scroll;
+           /* overflow-x: scroll;
+            overflow-y: scroll;*/
+        }
+
+        .box-unit{
+            /* % will be applied from the parent */
+            width: 50%; /*you can also use vw , it will be applied to whole view*/
+            height: 100vh;
+            background-color: hotpink;
+            border-top: 3px solid red;
+            border-bottom: 3px solid red;
+            /*default font size for font is 16px, if you want to change copy size then can be applied from em*/
+            /*rem is same as em - but it takes root font of browser*/
+        }
+        body{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-model">Lorem ipsum dolor sit amet.</div>
+    <div class="box-model">Lorem ipsum dolor sit amet.</div>
+    <div class="box-model">Lorem ipsum dolor sit amet.</div>
+    <p>margin collapsing - margin will move, it will collapse margin</p>
+
+    <p>you can change property by css , we can use universal selector</p>
+    <div class="box"></div>
+
+    <article class="box-article">Lorem ipsum dolor sit amet.</article>
+
+    <p>apply box model to span </p>
+    <span class="box-model-span">Hello</span>
+    <span class="box-model-span">Hello</span>
+    <span class="box-model-span">Hello</span>
+
+
+    <p>Overflow : hidden/ display/ scroll/ auto : scroll only visible when you  hover</p>
+    <div class="overflow-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe qui laudantium dolores excepturi tempore vero facilis, veritatis labore, suscipit nam natus obcaecati delectus et laborum pariatur autem cupiditate mollitia voluptatum.</div>
+
+    <p>Units: Absolute values : px</p>
+    <p>Units: Relative values : % vw vh em</p>
+    <p>if you want to apply 100% width it can be done by 100%</p>
+    <p>if you want to apply 100% height, body does not have height at all. so it won't work with %</p>
+    <div class="box-unit">hello</div>
+
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            color: darkgreen;
+            
+        }
+        p{
+            color: blue;
+            font-style: italic;
+            border: 1px solid black;
+        }
+        p strong{
+            font-style: initial;
+            border: inherit;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(45deg, blue,yellow);
+        }
+        .radient{
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(100px, rgb(255, 145, 0),rgb(153, 56, 177), tomato);
+
+        }
+    </style>
+</head>
+<body>  
+    <article>
+        <h1>Heading</h1>
+        //initial, inherite - element takes property from parent, if don't want parent's style then initial state 
+        <p>Lorem ipsum <strong>Nauka</strong> dolor sit amet consectetur adipisicing elit. Eos laborum illum tempora provident distinctio a, fuga iusto ducimus deleniti dolorum similique nam officiis, iste dolorem necessitatibus eveniet repellat est minus.</p>
+    </article>
+    <div></div>
+    <div class="radient"></div>
+</body>
+</html>

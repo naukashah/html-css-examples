@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+        /*pre defined classes by the browser */
+        article p:first-child {
+            color: tomato;
+        }
+
+        ul li:first-child,
+        ul li:last-child {
+            font-weight: bold;
+        }
+
+        ul li:first-of-type {
+            color: blue;
+        }
+
+        article p:first-of-type {
+            color: red;
+        }
+
+        article p:last-of-type {
+            color: green;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+        }
+
+        tr:nth-child(odd) {
+            color: blueviolet;
+        }
+
+        article p:nth-child(3n) {
+            color: pink;
+        }
+
+        a:hover {
+            color: chartreuse;
+        }
+
+        a:link {
+            font-weight: bold;
+            color: darkgreen;
+        }
+
+        a:visited {
+            color: chocolate;
+        }
+
+        a:active {
+            color: darkblue;
+        }
+
+        a:focus {
+            background-color: darkorange;
+        }
+
+        /*Element Pseudo*/
+        p::first-letter{
+            font-size: xx-large;
+        }
+        p::first-line{
+            text-decoration: underline;
+        }
+        p::before{
+            content: '..';
+        }
+        p::after{
+            content: '!!';
+        }
+        p::selection{
+            background-color: darkturquoise;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <a href="https://www.apple.com" target="_blank">Apple</a><br />
+    <a href="https://www.google.com" target="_blank">Google</a><br />
+    <a href="https://www.paypal.com" target="_blank">Paypal</a><br />
+    <a href="https://www.amazon.com" target="_blank">Amazon</a><br />
+    <br />
+    <table>
+        <thead>
+            <th>No</th>
+            <th>Name</th>
+            <th>Value</th>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>item 1</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Item 2</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Item 3</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Item 4</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Item 5</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Item 6</td>
+            <td>60</td>
+        </tr>
+    </table>
+    <article>
+        <h2>Headline 2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem non aliquam perferendis, commodi perspiciatis
+            quae ipsam. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores veritatis repellendus ratione hic
+            ipsa dolorum. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores veritatis repellendus ratione hic
+            ipsa dolorum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores veritatis repellendus ratione hic
+            ipsa dolorum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores veritatis repellendus ratione hic
+            ipsa dolorum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores veritatis repellendus ratione hic
+            ipsa dolorum.</p>
+
+        <ul>
+            <!--  ul>li*3{List $} -->
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+            <li>List 6</li>
+        </ul>
+    </article>
+    <h2>Headline 2</h2>
+    <article>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem non aliquam perferendis, commodi perspiciatis
+            quae ipsam. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores veritatis repellendus ratione hic
+            ipsa dolorum. </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores veritatis repellendus ratione hic
+            ipsa dolorum.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error asperiores veritatis repellendus ratione hic
+            ipsa dolorum.</p>
+    </article>
+    <article>
+        <h2>Element Pseudo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, omnis neque quis non velit deserunt iste quos culpa ad earum doloremque possimus qui sequi voluptatum libero officia hic! Autem, dolorum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim rem officia laudantium provident rerum sint necessitatibus amet quam maiores vero harum ipsum numquam, dignissimos esse quo! Excepturi, distinctio placeat.
+        </p>
+    </article>
+
+
+</body>
+
+</html>
